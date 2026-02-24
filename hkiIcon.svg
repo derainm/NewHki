@@ -1,0 +1,11 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="2" y="2" width="28" height="28" rx="6" fill="#2a2d32" stroke="#38bdf8" stroke-width="2"/>
+  
+  <rect x="5" y="5" width="22" height="20" rx="4" fill="#1a1b1e"/>
+  
+  <path d="M11 11H14V14H11V11ZM18 11H21V14H18V11ZM11 18H14V21H11V18ZM18 18H21V21H18V18Z" fill="#38bdf8">
+    <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite" />
+  </path>
+  
+  <path d="M6 26H26" stroke="#121214" stroke-width="2" stroke-linecap="round"/>
+</svg>
