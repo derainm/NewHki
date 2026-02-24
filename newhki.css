@@ -1,0 +1,256 @@
+        :root {
+            --case-bg: #121214;
+            --plate-bg: #1a1b1e;
+            --key-bg: #2a2d32;
+            --key-text: #d1d5db;
+            --accent: #38bdf8;
+            --accent-glow: rgba(56, 189, 248, 0.4);
+            --container-bg: #161b22;
+        }
+
+        body {
+            background-color: #0a0a0c;
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: visible;
+           /* min-height: 100vh;*/
+            /*margin: 0;
+            padding: 20px 0;
+            gap: 25px;*/
+        }
+
+        /* Container for the 2 rows of groups */
+        .master-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .group-row {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+.group-card {
+            background: var(--container-bg);
+            padding: 12px 18px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.05);
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            min-width: 220px;
+
+}
+
+/* Ensure labels have a fixed width so inputs start at the same vertical line */
+.key-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #8b949e;
+    width: 140px;      /* Fixed width for the label area */
+    flex-shrink: 0;    /* Prevents label from squishing */
+    text-align: left;
+}
+
+/* Updated row to align items to the start/left */
+.input-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Changed from space-between */
+    gap: 15px;                  /* Consistent gap between label and input */
+    margin-bottom: 4px;
+}
+
+/* Allow inputs to fill remaining space if needed, or keep them uniform */
+.shortcut-input {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    color: #8b949e;
+    padding: 6px 10px;
+    border-radius: 5px;
+    width: 150px;       /* Fixed width for uniform look */
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+        .shortcut-input:focus {
+            outline: none;
+            border-color: var(--accent);
+            color: var(--accent);
+            box-shadow: 0 0 10px var(--accent-glow);
+            background: rgba(56, 189, 248, 0.05);
+        }
+/* Improve the group row to wrap automatically */
+.group-row {
+    display: flex;
+    flex-wrap: wrap;    /* Allows cards to move to next line automatically */
+    gap: 15px;
+    justify-content: center;
+    align-items: stretch; /* Makes cards in the same row equal height */
+    width: 100%;
+}
+
+        .group-header {
+            font-size: 0.7rem;
+            color: #565d66;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border-bottom: 1px solid #222;
+            padding-bottom: 4px;
+            margin-bottom: 4px;
+        }
+
+
+
+        /* Keyboard Case */
+        .keyboard-case {
+            background: var(--case-bg);
+            padding: 15px;
+            border-radius: 18px;
+            box-shadow: 0 20px 80px rgba(0,0,0,0.8);
+            border: 1px solid #222;
+            transform: scale(0.95); /* Slightly smaller to fit everything */
+        }
+
+        .keyboard-plate {
+            background: var(--plate-bg);
+            /*padding: 15px;*/
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .row { display: flex; gap: 5px; justify-content: center; }
+
+        .key {
+            width: 46px; height: 46px;
+            background: var(--key-bg);
+            border-radius: 6px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 0.85rem; font-weight: 700; color: var(--key-text);
+            box-shadow: 0 3px 0 #151618;
+            transition: all 0.05s ease;
+            text-transform: uppercase;
+        }
+
+        .key.active {
+            background: var(--accent);
+            color: #000;
+            transform: translateY(2px);
+            box-shadow: 0 1px 0 #008891, 0 0 15px var(--accent-glow);
+        }
+
+        .Backspace { width: 90px; } .Tab { width: 65px; } .CapsLock { width: 80px; }
+        .Enter { width: 90px; } .ShiftLeft, .ShiftRight { width: 110px; }
+        .Space { width: 300px; } .ControlLeft, .ControlRight, .AltLeft, .AltRight { width: 60px; }
+
+/* The Main Vertical Container */
+
+
+/* The Horizontal Row (Created by your PHP loop) */
+/*
+.group-row {
+    display: flex;
+    flex-direction: row;     
+    gap: 15px;               
+    justify-content: center;
+}
+*/
+
+/* This is the container for all your PHP-generated groups */
+.master-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    
+    /* SCROLL TRICK HERE */
+    max-height: 60vh;      /* Limits height to 60% of the screen */
+    overflow-y: auto;      /* Adds scrollbar when content is too long */
+   /* padding: 20px;          Prevents cards from touching the edges */
+    border-bottom: 2px solid #222; /* Visual separator */
+}
+
+/* Custom scrollbar to match your dark theme */
+.master-grid::-webkit-scrollbar {
+    width: 8px;
+}
+.master-grid::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 10px;
+}
+.master-grid::-webkit-scrollbar-track {
+    background: #0a0a0c;
+}
+
+/* Ensure the keyboard stays fixed at the bottom */
+/*
+.keyboard-case {
+    margin-top: 20px;
+    flex-shrink: 0;        /* Prevents the keyboard from squishing */
+}
+*/
+.toggle-btn {
+    background: #2a2d32;
+    color: var(--accent);
+    border: 1px solid #444;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1;
+    transition: all 0.2s;
+}
+
+.toggle-btn:hover {
+    border-color: var(--accent);
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+/* The hiding logic */
+#kb-container.hidden {
+    display: none !important;
+}
+
+/* Make sure scroll area takes more space when keyboard is gone */
+.master-grid {
+   
+    /*
+ flex-grow: 1;
+    max-height: 45vh;// 
+    */
+    max-height: 50vh;// 
+    overflow-y: visible;
+}
+
+.master-grid.full-height {
+    max-height: 85vh;
+}
+
+
+.btn-save {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-save:hover {
+    background-color: #0056b3;
+}

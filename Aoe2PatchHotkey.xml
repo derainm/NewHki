@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- becarefull don't edit this
+-patch write static tech hotkey  don't touch those value(else you  hotkey will be broken) 
+-->
+<configuration count="20">
+  <Hotkey_Groups id="0" Name="UnitCommands" langIdText="20000" count="17" >
+    <Hotkey Name="BuildEconomic"          id="0"   langIdText="19214"  langHotKey="0"/>
+    <Hotkey Name="BuildMilitary"          id="1"   langIdText="19215"  langHotKey="0"/>
+    <Hotkey Name="Repair"                 id="2"   langIdText="19224"  langHotKey="0"/>
+    <!-- i don't where is it on asm
+    <Hotkey Name="Group"                  id="3"   langIdText=""/>
+    <Hotkey Name="Ungroup"                id="4"   langIdText="19253"/>
+    -->
+    <Hotkey Name="Stop"                   id="5"   langIdText="19216"  langHotKey="0"/>
+    <Hotkey Name="Unload"                 id="6"   langIdText="19225"  langHotKey="0"/>
+    <Hotkey Name="Pack"                   id="7"   langIdText="19241"  langHotKey="0"/>
+    <Hotkey Name="Unpack"                 id="8"   langIdText="19242"  langHotKey="0"/>
+    <Hotkey Name="Heal"                   id="9"   langIdText="19221"  langHotKey="0"/>
+    <Hotkey Name="Convert"                id="10"  langIdText="19222"  langHotKey="0"/>
+    <Hotkey Name="Garrison"               id="11"  langIdText="19012"  langHotKey="0"/>
+    <Hotkey Name="Delete"                 id="12"  langIdText="19000"  langHotKey="0"/>
+    <Hotkey Name="SetGatherPoint"         id="13"  langIdText="19002"  langHotKey="0"/>
+    <Hotkey Name="AttackGround"           id="14"  langIdText="19220"  langHotKey="0"/>
+    <Hotkey Name="Open/Close Gate"        id="15"  langIdText="16805"  langHotKey="16806"/>
+    <Hotkey Name="Drop Relic"             id="16"  langIdText="16807"  langHotKey="16808"/> 
+  </Hotkey_Groups>
+  <Hotkey_Groups id="1" Name="GameCommands"  langIdText="20001" count="73"  >
+    <!--
+    <Hotkey Name="CreateGroup0"           id="0"   langIdText=""/>
+    <Hotkey Name="CreateGroup1"           id="1"   langIdText="19244"/>
+    <Hotkey Name="CreateGroup2"           id="2"   langIdText="19245"/>
+    <Hotkey Name="CreateGroup3"           id="3"   langIdText="19246"/>
+    <Hotkey Name="CreateGroup4"           id="4"   langIdText="19247"/>
+    <Hotkey Name="CreateGroup5"           id="5"   langIdText="19248"/>
+    <Hotkey Name="CreateGroup6"           id="6"   langIdText="19249"/>
+    <Hotkey Name="CreateGroup7"           id="7"   langIdText="19250"/>
+    <Hotkey Name="CreateGroup8"           id="8"   langIdText="19251"/>
+    <Hotkey Name="CreateGroup9"           id="9"   langIdText="19252"/> 
+    <Hotkey Name="SelectGroup0"           id="10"  langIdText=""/>
+    <Hotkey Name="SelectGroup1"           id="11"  langIdText="19254"/>
+    <Hotkey Name="SelectGroup2"           id="12"  langIdText="19255"/>
+    <Hotkey Name="SelectGroup3"           id="13"  langIdText="19256"/>
+    <Hotkey Name="SelectGroup4"           id="14"  langIdText="19257"/>
+    <Hotkey Name="SelectGroup5"           id="15"  langIdText="19258"/>
+    <Hotkey Name="SelectGroup6"           id="16"  langIdText="19259"/>
+    <Hotkey Name="SelectGroup7"           id="17"  langIdText="19260"/>
+    <Hotkey Name="SelectGroup8"           id="18"  langIdText="19261"/>
+    <Hotkey Name="SelectGroup9"           id="19"  langIdText="19262"/>
+    -->
+    <Hotkey Name="Chat"                   id="20"  langIdText="19001"  langHotKey="0"/>
+    <Hotkey Name="SpeedUp"                id="21"  langIdText="19004"  langHotKey="0"/>
+    <Hotkey Name="SpeedDown"              id="22"  langIdText="19005"  langHotKey="0"/>
+    <Hotkey Name="NextIdleVillager"       id="23"  langIdText="19023"  langHotKey="0"/>
+    <Hotkey Name="NextIdleVillager2"      id="24"  langIdText="19023"  langHotKey="0"/>
+    <Hotkey Name="CycleFocusArea"         id="25"  langIdText="19024"  langHotKey="0"/>
+    <Hotkey Name="CycleFocusArea2"        id="26"  langIdText="19024"  langHotKey="0"/>
+    <Hotkey Name="GoToSelected"           id="27"  langIdText="19025"  langHotKey="0"/>
+    <Hotkey Name="GoToTownCenter"         id="28"  langIdText="19026"  langHotKey="0"/>
+    <Hotkey Name="GoToTownCenter2"        id="29"  langIdText="19026"  langHotKey="0"/>
+    <Hotkey Name="GoToMarket"             id="30"  langIdText="19027"  langHotKey="0"/>
+    <Hotkey Name="ScrollChatDown"         id="31"  langIdText="19028"  langHotKey="0"/>
+    <Hotkey Name="ScrollChatUp"           id="32"  langIdText="19029"  langHotKey="0"/>
+    <Hotkey Name="Score"                  id="33"  langIdText="19268"  langHotKey="0"/>
+    <Hotkey Name="GoToBarracks"           id="34"  langIdText="19269"  langHotKey="0"/>
+    <Hotkey Name="GoToArcheryRange"       id="35"  langIdText="19270"  langHotKey="0"/>
+    <Hotkey Name="GoToStable"             id="36"  langIdText="19271"  langHotKey="0"/>
+    <Hotkey Name="GoToSiegeWorkshop"      id="37"  langIdText="19272"  langHotKey="0"/>
+    <Hotkey Name="GoToDock"               id="38"  langIdText="19273"  langHotKey="0"/>
+    <Hotkey Name="GoToMonastery"          id="39"  langIdText="19274"  langHotKey="0"/>
+    <Hotkey Name="GoToBlacksmith"         id="40"  langIdText="19275"  langHotKey="0"/>
+    <Hotkey Name="GoToMill"               id="41"  langIdText="19276"  langHotKey="0"/>
+    <Hotkey Name="GoToUniversity"         id="42"  langIdText="19277"  langHotKey="0"/>
+    <Hotkey Name="TechTree"               id="43"  langIdText="19282"  langHotKey="0"/>
+    <!--
+    <Hotkey Name="Achievements"           id="44"  langIdText=""/>
+    -->
+    <Hotkey Name="DisplayGameTime"        id="45"  langIdText="19010"  langHotKey="0"/>
+    <Hotkey Name="NextIdleMilitary"       id="46"  langIdText="19068"  langHotKey="0"/>
+    <Hotkey Name="NextIdleMilitary2"      id="47"  langIdText="19068"  langHotKey="0"/>
+    <Hotkey Name="Flare"                  id="48"  langIdText="19289"  langHotKey="0"/>
+    <Hotkey Name="GoToCastle"             id="49"  langIdText="19290"  langHotKey="0"/>
+    <Hotkey Name="GoToMiningCamp"         id="50"  langIdText="19291"  langHotKey="0"/>
+    <Hotkey Name="GoToLumberCamp"         id="51"  langIdText="19292"  langHotKey="0"/>
+    <Hotkey Name="MinimapCombat"          id="52"  langIdText="19293"  langHotKey="0"/>
+    <Hotkey Name="MinimapResource"        id="53"  langIdText="19294"  langHotKey="0"/>
+    <Hotkey Name="MinimapNormal"          id="54"  langIdText="19295"  langHotKey="0"/>
+    <!-- F1 by default?
+    <Hotkey Name="ExtendedHelp"           id="55"  langIdText=""/>
+    <Hotkey Name="AdvancedModes"          id="56"  langIdText=""/>
+    -->
+    <Hotkey Name="Diplomacy"              id="57"  langIdText="19298"  langHotKey="0"/>
+    <!-- F10 by default?
+    <Hotkey Name="Menu"                   id="58"  langIdText="19299"/>
+    -->
+    <Hotkey Name="Objectives"             id="59"  langIdText="19300"  langHotKey="0"/>
+    <Hotkey Name="ChatDialog"             id="60"  langIdText="19301"  langHotKey="0"/>
+    <Hotkey Name="PauseGame"              id="61"  langIdText="19323"  langHotKey="0"/>
+    <Hotkey Name="SaveGame"               id="62"  langIdText="19325"  langHotKey="0"/>
+    <Hotkey Name="FriendFoeColors"        id="63"  langIdText="19327"  langHotKey="0"/>
+    <Hotkey Name="PreviousView"           id="64"  langIdText="19326"  langHotKey="0"/>
+    <Hotkey Name="SaveChapter"            id="65"  langIdText="19328"  langHotKey="0"/>
+    <Hotkey Name="GoToKrepost"            id="66"  langIdText="19281"  langHotKey="16768"/>
+    <Hotkey Name="GoToDonjon"             id="67"  langIdText="19329"  langHotKey="16768"/>
+    <Hotkey Name="deleteAllSelection"     id="68"  langIdText="19334"  langHotKey="16804"/>
+    <Hotkey Name="GoToNextIdleMonk"       id="69"  langIdText="19742"  langHotKey="19743"/>
+    <Hotkey Name="ZoomIn"                 id="70"  langIdText="65008"  langHotKey="65009"/>
+    <Hotkey Name="ZoomOut"                id="71"  langIdText="65010"  langHotKey="65011"/>
+    <Hotkey Name="GoToNextIdleMonkWithFaith" id="72"  langIdText="19744"  langHotKey="19745"/>
+    
+  </Hotkey_Groups>
+  <Hotkey_Groups id="2" Name="ScrollCommands" langIdText="20002" count="4"  >
+    <Hotkey Name="ScrollLeft"             id="0"   langIdText="19006"   langHotKey="0"/>
+    <Hotkey Name="ScrollRight"            id="1"   langIdText="19007"   langHotKey="0"/>
+    <Hotkey Name="ScrollUp"               id="2"   langIdText="19008"   langHotKey="0"/>
+    <Hotkey Name="ScrollDown"             id="3"   langIdText="19009"   langHotKey="0"/>
+    <!-- HD?
+    <Hotkey Name="FastScrollLeft"         id="4"   langIdText=""/>
+    <Hotkey Name="FastScrollRight"        id="5"   langIdText=""/>
+    <Hotkey Name="FastScrollUp"           id="6"   langIdText=""/>
+    <Hotkey Name="FastScrollDown"         id="7"   langIdText=""/>
+    <Hotkey Name="ScrollLeftUp"           id="8"   langIdText=""/>
+    <Hotkey Name="ScrollLeftDown"         id="9"   langIdText=""/>
+    <Hotkey Name="ScrollRightDown"        id="10"  langIdText=""/>
+    <Hotkey Name="ScrollRightUp"          id="11"  langIdText=""/>
+    <Hotkey Name="FastScrollLeftUp"       id="12"  langIdText=""/>
+    <Hotkey Name="FastScrollLeftDown"     id="13"  langIdText=""/>
+    <Hotkey Name="FastScrollRightDown"    id="14"  langIdText=""/>
+    <Hotkey Name="FastScrollRightUp"      id="15"  langIdText=""/>
+    -->
+  </Hotkey_Groups>
+  <Hotkey_Groups id="3" Name="VillagerBuild" langIdText="20003"  count="33"  >
+    <Hotkey Name="BuildHouse"             id="0"   langIdText="19213"  langHotKey="0"/>
+    <Hotkey Name="BuildMill"              id="1"   langIdText="19236"  langHotKey="0"/>
+    <Hotkey Name="BuildBlacksmith"        id="2"   langIdText="19063"  langHotKey="0"/>
+    <Hotkey Name="BuildDock"              id="3"   langIdText="19067"  langHotKey="0"/>
+    <Hotkey Name="BuildBarracks"          id="4"   langIdText="19064"  langHotKey="0"/>
+    <Hotkey Name="BuildPallisadeWall"     id="5"   langIdText="19210"  langHotKey="0"/>
+    <Hotkey Name="BuildMarket"            id="6"   langIdText="19237"  langHotKey="0"/>
+    <Hotkey Name="BuildStoneWall"         id="7"   langIdText="19211"  langHotKey="0"/>
+    <Hotkey Name="BuildTower"             id="8"   langIdText="19201"  langHotKey="0"/>
+    <Hotkey Name="BuildBombardTower"      id="9"   langIdText="19204"  langHotKey="0"/>
+    <Hotkey Name="BuildGate1"             id="10"  langIdText="19264"  langHotKey="0"/>
+    <!--
+    <Hotkey Name="BuildGate2"             id="11"  langIdText=""/>
+    -->
+    <Hotkey Name="BuildFarm"              id="12"  langIdText="19200"  langHotKey="0"/>
+    <Hotkey Name="BuildArcheryRange"      id="13"  langIdText="19062"  langHotKey="0"/>
+    <Hotkey Name="BuildStable"            id="14"  langIdText="19206"  langHotKey="0"/>
+    <Hotkey Name="BuildMonastery"         id="15"  langIdText="19065"  langHotKey="0"/>
+    <Hotkey Name="BuildTownCenter"        id="16"  langIdText="19238"  langHotKey="0"/>
+    <Hotkey Name="BuildSiegeWorkshop"     id="17"  langIdText="19205"  langHotKey="0"/>
+    <Hotkey Name="BuildUniversity"        id="18"  langIdText="19208"  langHotKey="0"/>
+    <Hotkey Name="BuildWonder"            id="19"  langIdText="19209"  langHotKey="0"/>
+    <Hotkey Name="BuildCastle"            id="20"  langIdText="19066"  langHotKey="0"/>
+    <!--
+    <Hotkey Name="BuildTradeWorkshop"     id="21"  langIdText=""/>
+    <Hotkey Name="BuildPackedTownCenter"  id="22"  langIdText=""/>
+    -->
+    <Hotkey Name="BuildSawMill"           id="23"  langIdText="19283"  langHotKey="0"/>
+    <Hotkey Name="BuildMiningCamp"        id="24"  langIdText="19288"  langHotKey="0"/>
+    <Hotkey Name="BuildFishTrap"          id="25"  langIdText="19202"  langHotKey="0"/>
+    <Hotkey Name="BuildOutpost"           id="26"  langIdText="19203"  langHotKey="0"/>
+    <Hotkey Name="BuildNext"              id="27"  langIdText="19243"  langHotKey="0"/>
+    <!--  user patch 1.5 Alread hook this section    -->
+    <Hotkey Name="BuildPalisadeGate"      id="28"  langIdText="19212"/>
+    <Hotkey Name="BuildFeitoria"          id="29"  langIdText="19075"/>
+    <Hotkey Name="BuildKrepost"           id="30"  langIdText="16674"  langHotKey="16675"/>
+    <Hotkey Name="BuildDonjon"            id="31"  langIdText="16710"  langHotKey="16711"/>
+    <Hotkey Name="BuildCaravanserai"      id="32"  langIdText="16728"  langHotKey="19729"/>
+
+
+  </Hotkey_Groups>
+  <Hotkey_Groups id="4" Name="TownCenter" langIdText="20004"   count="19"   >
+    <Hotkey Name="CreateVillager"         id="0"   langIdText="19054"  langHotKey="16121"/>
+    <!-- 
+        id=1 ???
+    -->
+    <Hotkey Name="Loom"                   id="2"   langIdText="19081"  langHotKey="16762"/>
+    <Hotkey Name="TownWatch"              id="3"   langIdText="19082"  langHotKey="16763"/>
+    <Hotkey Name="Wheelbarrow"            id="4"   langIdText="19083"  langHotKey="16764"/>
+    <Hotkey Name="GotNextAge"             id="5"   langIdText="19152"  langHotKey="19153"/>
+    <Hotkey Name="RingTownBell"           id="6"   langIdText="19319"  langHotKey="0"/>
+    <Hotkey Name="BackToWork"             id="7"   langIdText="19324"  langHotKey="0"/>
+  </Hotkey_Groups>
+  <Hotkey_Groups id="5" Name="Dock"        langIdText="20007"  count="20"   >
+    <Hotkey Name="CreateFishingShip"      id="0"   langIdText="19045"   langHotKey="16090"/>
+    <Hotkey Name="CreateTradeCog"         id="1"   langIdText="19044"  langHotKey="16089"/>
+    <Hotkey Name="CreateGalley"           id="2"   langIdText="19059"  langHotKey="16436"/>
+    <Hotkey Name="CreateCannonGalleon"    id="3"   langIdText="19055"  langHotKey="16287"/>
+    <Hotkey Name="CreateFireGalley"       id="4"   langIdText="19279"  langHotKey="16426"/>
+    <Hotkey Name="CreateDemolitionShip"   id="5"   langIdText="19280"  langHotKey="16424"/>
+    <Hotkey Name="CreateTransport"        id="7"   langIdText="19284"  langHotKey="16443"/>
+    <Hotkey Name="CreateLongboat"         id="8"   langIdText="19320"  langHotKey="16106"/>
+    <Hotkey Name="CreateTurtleShip"       id="9"   langIdText="19072"  langHotKey="16731"/>
+    <Hotkey Name="galleyUpgrade"          id="10"   langIdText="16662"  langHotKey="16663"/>
+   <!--
+    <Hotkey Name="Gillnets"               id="10"  langIdText="16664"  langHotKey="16665"/>
+   --> 
+    <Hotkey Name="CareeningDryDock"       id="11"  langIdText="16666"  langHotKey="16668"/>
+    <Hotkey Name="FastFireShip"           id="12"  langIdText="16669"  langHotKey="16670"/>
+    <Hotkey Name="heavyDemoUpgrade"       id="13"  langIdText="16672"  langHotKey="16673"/>
+    <Hotkey Name="EliteUniqueShip"        id="14"  langIdText="16676"  langHotKey="16677"/>
+    <Hotkey Name="Shipwright"             id="15"  langIdText="16678"  langHotKey="16680"/>
+    <Hotkey Name="EliteCannonUpgrade"     id="16"  langIdText="16681"  langHotKey="16682"/>
+    <Hotkey Name="CreateCaravel"          id="17"  langIdText="16724"  langHotKey="16725"/>
+    <Hotkey Name="CreateThirisadai"       id="18"  langIdText="16726"  langHotKey="16727"/>
+    <Hotkey Name="AutoFishTraps"          id="19"  langIdText="19335"  langHotKey="19336"/>
+
+  </Hotkey_Groups>
+  <Hotkey_Groups id="6" Name="Barracks"   langIdText="20008" count="11"     >
+    <Hotkey Name="CreateMilitia"          id="0"   langIdText="19035"  langHotKey="16079"/>
+    <Hotkey Name="CreatePikeman"          id="1"   langIdText="19034"  langHotKey="16078"/>
+    <Hotkey Name="CreateEagleWarrior"     id="2"   langIdText="19070"  langHotKey="16671"/>
+    <Hotkey Name="CreateHuskarl"          id="3"   langIdText="16718"  langHotKey="16719"/>
+    <Hotkey Name="MilitiaUpgrades"        id="4"   langIdText="16600"  langHotKey="16601"/>
+    <Hotkey Name="PikemanUpgrade"         id="5"   langIdText="16602"  langHotKey="16603"/>
+    <Hotkey Name="EagleUpgrade"           id="6"   langIdText="16604"  langHotKey="16605"/>
+    <Hotkey Name="Supplies"               id="7"   langIdText="16606"  langHotKey="16607"/>
+    <Hotkey Name="Squires"                id="8"   langIdText="16608"  langHotKey="16609"/>
+    <Hotkey Name="Arson"                  id="9"   langIdText="16610"  langHotKey="16611"/>
+    <Hotkey Name="Condottiero"            id="10"   langIdText="19073"  langHotKey="16679"/>
+  </Hotkey_Groups>
+  <Hotkey_Groups id="7" Name="ArcheryRange" langIdText="20009"  count="14"  >
+    <Hotkey Name="CreateArcher"           id="0"   langIdText="19038"  langHotKey="16083"/>
+    <Hotkey Name="CreateSkirmisher"       id="1"   langIdText="19043"  langHotKey="16088"/>
+    <Hotkey Name="CreateCavArcher"        id="2"   langIdText="19040"  langHotKey="16085"/>
+    <Hotkey Name="CreateHandCannoneer"    id="3"   langIdText="19041"  langHotKey="16086"/>
+    <Hotkey Name="CreateGenitour"         id="4"   langIdText="19032" langHotKey="16417"/>
+    <Hotkey Name="ArcherUpgrades"         id="5"   langIdText="16612" langHotKey="16613"/>
+    <Hotkey Name="SkirmisherUpgrades"     id="6"   langIdText="16614" langHotKey="16615"/>
+    <Hotkey Name="EliteCavalryArcher"     id="7"   langIdText="16616" langHotKey="16617"/>
+    <Hotkey Name="Thumbring"              id="8"   langIdText="16618" langHotKey="16619"/>
+    <Hotkey Name="ParthianTactics"        id="9"   langIdText="16620" langHotKey="16621"/>
+    <Hotkey Name="EliteGenitour"          id="10"  langIdText="16622" langHotKey="16623"/>
+    <Hotkey Name="CreateEleArcher"        id="11"  langIdText="16716" langHotKey="16717"/>
+    <Hotkey Name="EliteEleArcher"         id="12"  langIdText="16720" langHotKey="16721"/>
+    <Hotkey Name="TecHandCannon"          id="13"  langIdText="19331" langHotKey="16802"/>
+  </Hotkey_Groups>
+  <Hotkey_Groups id="8" Name="Stable"     langIdText="20010"   count="13"   >
+    <Hotkey Name="CreateScout"            id="0"   langIdText="19060"  langHotKey="16326"/>
+    <Hotkey Name="CreateCamel"            id="1"   langIdText="19031"  langHotKey="16416"/>
+    <Hotkey Name="CreateKnight"           id="2"   langIdText="19030"  langHotKey="16068"/>
+    <Hotkey Name="CreateBattleElephant"   id="3"   langIdText="16712"  langHotKey="16713"/>
+    <Hotkey Name="SteppeLancer"           id="4"   langIdText="5800"  langHotKey="16765"/>
+    <Hotkey Name="ScoutUpgrades"          id="5"   langIdText="16624" langHotKey="16625"/>
+    <Hotkey Name="KnightUpgrades"         id="6"   langIdText="16626" langHotKey="16627"/>
+    <Hotkey Name="CamelUpgrades"          id="7"   langIdText="16628" langHotKey="16629"/>
+    <Hotkey Name="EliteSteppe"            id="8"   langIdText="16630" langHotKey="16631"/>
+    <Hotkey Name="Bloodlines"             id="9"   langIdText="16632" langHotKey="16633"/>
+    <Hotkey Name="Husbandry"              id="10"  langIdText="16634" langHotKey="16635"/>
+    <Hotkey Name="Tarkan"                 id="11"  langIdText="16714" langHotKey="16715"/>
+    <Hotkey Name="EliteElephant"          id="12"  langIdText="16722" langHotKey="16723"/>
+  </Hotkey_Groups>
+  <Hotkey_Groups id="9" Name="SiegeWorkshop" langIdText="20011"   count="10" >
+    <Hotkey Name="CreateRam"              id="0"   langIdText="19056"  langHotKey="16094"/>
+    <Hotkey Name="CreateScorpion"         id="1"   langIdText="19049"  langHotKey="16096"/>
+    <Hotkey Name="CreateMangonel"         id="2"   langIdText="19285"  langHotKey="16095"/>
+    <Hotkey Name="CreateBombardCannon"    id="3"   langIdText="19047"  langHotKey="16093"/>
+    <Hotkey Name="CreateSiegeTower"       id="4"   langIdText="19048"  langHotKey="16445"/>
+    <Hotkey Name="RamUpgrades"            id="5"   langIdText="16636"  langHotKey="16637"/>
+    <Hotkey Name="OnagerUpgrades"         id="6"   langIdText="16638"  langHotKey="16639"/>
+    <Hotkey Name="HeavyScorpion"          id="7"   langIdText="16640"  langHotKey="16641"/>
+    <Hotkey Name="houfnice"               id="8"   langIdText="16683"  langHotKey="16684"/>
+    <Hotkey Name="TecBombardCannon"       id="9"   langIdText="19332"  langHotKey="16803"/>
+  </Hotkey_Groups>
+  <Hotkey_Groups id="10" Name="Monastery" langIdText="20012"   count="12"   >
+    <Hotkey Name="Monk"                   id="0"   langIdText="19051"  langHotKey="16099"/>
+    <Hotkey Name="Missionary"             id="1"   langIdText="19071"  langHotKey="16691"/>
+
+    <Hotkey Name="Atonement"              id="2"   langIdText="19116"  langHotKey="16751"/>
+    <Hotkey Name="BlockPrinting"          id="3"   langIdText="19117"  langHotKey="16752"/>
+    <Hotkey Name="Faith"                  id="4"   langIdText="19118"  langHotKey="16753"/>
+    <Hotkey Name="Fervor"                 id="5"   langIdText="19119"  langHotKey="16754"/>
+    <Hotkey Name="HerbalMedicine"         id="6"   langIdText="19120"  langHotKey="16755"/>
+    <Hotkey Name="Heresy"                 id="7"   langIdText="19121"  langHotKey="16756"/>
+    <Hotkey Name="Illumination"           id="8"   langIdText="19122"  langHotKey="16758"/>
+    <Hotkey Name="Redemption"             id="9"   langIdText="19123"  langHotKey="16759"/>
+    <Hotkey Name="Sanctity"               id="10"  langIdText="19124"  langHotKey="16760"/>
+    <Hotkey Name="Theocracy"              id="11"  langIdText="19125"  langHotKey="16761"/>
+
+  </Hotkey_Groups>
+  <Hotkey_Groups id="11" Name="Market"    langIdText="20013"   count="11"   >
+    <Hotkey Name="CreateTradeCart"        id="0"   langIdText="19286"  langHotKey="16100"/>
+    <Hotkey Name="Caravan"                id="1"   langIdText="16655"  langHotKey="16656"/>
+    <Hotkey Name="Coinage_Banking"        id="2"   langIdText="16657"  langHotKey="16658"/>
+    <Hotkey Name="Guilds"                 id="3"   langIdText="16659"  langHotKey="16661"/>
+    <!--static id on patch don't move it please-->
+    <Hotkey Name="Sellfood"               id="4"   langIdText="16696"  langHotKey="16697"/>
+    <Hotkey Name="SellWood"               id="5"   langIdText="16698"  langHotKey="16699"/>
+    <Hotkey Name="SellStone"              id="6"   langIdText="16700"  langHotKey="16701"/>
+    <Hotkey Name="BuyFood"                id="7"   langIdText="16702"  langHotKey="16703"/>
+    <Hotkey Name="BuyWood"                id="8"   langIdText="16704"  langHotKey="16705"/>
+    <Hotkey Name="BuyStone"               id="9"   langIdText="16706"  langHotKey="16707"/>
+    <Hotkey Name="Cartography"            id="10"  langIdText="16800"  langHotKey="16801"/>
+    <!-- Todo Add sell and buy-->
+  </Hotkey_Groups>
+  <Hotkey_Groups id="12" Name="MilitaryUnits" langIdText="20014" count="13" >
+    <!--
+    <Hotkey Name="Horde"                  id="0"   langIdText="19302"/>
+    -->
+    <Hotkey Name="Box"                    id="1"   langIdText="19303"  langHotKey="0"/>
+    <Hotkey Name="Line"                   id="2"   langIdText="19304"  langHotKey="0"/>
+    <Hotkey Name="Staggered"              id="3"   langIdText="19305"  langHotKey="0"/>
+    <Hotkey Name="Flank"                  id="4"   langIdText="19306"  langHotKey="0"/>
+    <Hotkey Name="Patrol"                 id="5"   langIdText="19312"  langHotKey="0"/>
+    <Hotkey Name="Guard"                  id="6"   langIdText="19313"  langHotKey="0"/>
+    <Hotkey Name="Follow"                 id="7"   langIdText="19314"  langHotKey="0"/>
+    <Hotkey Name="Aggressive"             id="8"   langIdText="19315"  langHotKey="0"/>
+    <Hotkey Name="Defensive"              id="9"   langIdText="19316"  langHotKey="0"/>
+    <Hotkey Name="StandGround"            id="10"  langIdText="19317"  langHotKey="0"/>
+    <Hotkey Name="NoAttack"               id="11"  langIdText="19318"  langHotKey="0"/>
+    <Hotkey Name="FusionFormation"        id="12"  langIdText="40025"  langHotKey="0"/>
+    <!-- HD
+    <Hotkey Name="AttackMove"             id="12"  langIdText=""/>
+    -->
+  </Hotkey_Groups>
+  <Hotkey_Groups id="13" Name="Castle"    langIdText="20015"  count="11"    >
+    <Hotkey Name="Trebuchet"                id="0"   langIdText="19321"  langHotKey="16381"/>
+    <Hotkey Name="UniqueUnit"               id="1"   langIdText="19322"  langHotKey="16108"/>
+    <Hotkey Name="Petard"                   id="2"   langIdText="19069"  langHotKey="16660"/>
+    <Hotkey Name="FlamingCamel"             id="3"   langIdText="5375"   langHotKey="16766"/>
+    <Hotkey Name="EliteUniqueUnit"          id="4"   langIdText="16642"  langHotKey="16643"/>
+    <Hotkey Name="CastleUniqueTechnology"   id="5"   langIdText="16644"  langHotKey="16645"/>
+    <Hotkey Name="ImperialUniqueTechnology" id="6"   langIdText="16646"  langHotKey="16647"/>
+    <Hotkey Name="Hoardings"                id="7"   langIdText="16648"  langHotKey="16649"/>
+    <Hotkey Name="Sappers"                  id="8"   langIdText="16650"  langHotKey="16651"/>
+    <Hotkey Name="Conscription"             id="9"   langIdText="16652"  langHotKey="16653"/>
+    <Hotkey Name="Mercenarykipchaks"        id="10"  langIdText="16685"  langHotKey="16686"/>
+  </Hotkey_Groups>
+  <Hotkey_Groups id="14" Name="Mill"      langIdText="20017"   count="3"    >
+    <Hotkey Name="AddFarm"                id="0"   langIdText="19074"  langHotKey="0"/>
+    <Hotkey Name="AutoFarms"              id="1"   langIdText="19330"  langHotKey="16799"/>
+    <Hotkey Name="FarmUpgrade"            id="2"   langIdText="16689"  langHotKey="16690"/>
+  </Hotkey_Groups>
+  <Hotkey_Groups id="15" Name="Blacksmith" langIdText="20018"  count="5"   >
+    <Hotkey Name="Range "                 id="0"   langIdText="19076"  langHotKey="16734"/>
+    <Hotkey Name="Melee"                  id="1"   langIdText="19077"  langHotKey="16735"/>
+    <Hotkey Name="Archer"                 id="2"   langIdText="19078"  langHotKey="16736" />
+    <!--Armor -->
+    <Hotkey Name="Infantry"               id="3"   langIdText="19079"  langHotKey="16738" />
+    <!--Armor -->
+    <Hotkey Name="Cavalry"                id="4"   langIdText="19080"  langHotKey="16739" />
+    <!--Armor -->
+  </Hotkey_Groups>
+  <Hotkey_Groups id="16" Name="University" langIdText="20019"   count="11"  >
+    <Hotkey Name="Arrowslits"             id="0"   langIdText="19126"  langHotKey="16740" />
+    <Hotkey Name="Ballistics"             id="1"   langIdText="19127"  langHotKey="16741" />
+    <Hotkey Name="BombardTower"           id="2"   langIdText="19128"  langHotKey="16742" />
+    <Hotkey Name="Chemistry"              id="3"   langIdText="19133"  langHotKey="16743" />
+    <Hotkey Name="FortifiedWall"          id="4"   langIdText="19129"  langHotKey="16744" />
+    <Hotkey Name="GuardTower"             id="5"   langIdText="19130"  langHotKey="16745" />
+    <Hotkey Name="HeatedShot"             id="6"   langIdText="19131"  langHotKey="16746" />
+    <Hotkey Name="Masonry"                id="7"   langIdText="19132"  langHotKey="16747" />
+    <!--Architecture-->
+    <Hotkey Name="MurderHoles"            id="8"   langIdText="19134"  langHotKey="16748" />
+    <Hotkey Name="SiegeEngineers"         id="9"   langIdText="19135"  langHotKey="16749" />
+    <Hotkey Name="TreadmillCrane"         id="10"  langIdText="19136"  langHotKey="16750" />
+  </Hotkey_Groups>
+  <Hotkey_Groups id="17" Name="Select_all" langIdText="20020"   count="16"  >
+    <Hotkey Name="Select_all_Idle_villagers"      id="0"  langIdText="16784" langHotKey="16770"  />
+    <Hotkey Name="Select_all_Idle_military"       id="1"  langIdText="16785" langHotKey="16771"  />
+    <Hotkey Name="Select_all_Trade_carts"         id="2"  langIdText="16786" langHotKey="16772"  />
+    <Hotkey Name="Select_all_Town_centers"        id="3"  langIdText="16787" langHotKey="16773"  />
+    <Hotkey Name="Select_all_Barracks"            id="4"  langIdText="16788" langHotKey="16774"  />
+    <Hotkey Name="Select_all_Archery ranges"      id="5"  langIdText="16789" langHotKey="16775"  />
+    <Hotkey Name="Select_all_Stables"             id="6"  langIdText="16790" langHotKey="16776"  />
+    <Hotkey Name="Select_all_Siege_workshops"     id="7"  langIdText="16791" langHotKey="16777"  />
+    <Hotkey Name="Select_all_Docks"               id="8"  langIdText="16792" langHotKey="16778"  />
+    <Hotkey Name="Select_all_Markets"             id="9"  langIdText="16793" langHotKey="16779"  />
+    <Hotkey Name="Select_all_Monasteries"         id="10" langIdText="16794" langHotKey="16780"  />
+    <Hotkey Name="Select_all_Castles"             id="11" langIdText="16795" langHotKey="16781"  />
+    <Hotkey Name="Select_all_Kreposts"            id="12" langIdText="16796" langHotKey="16782"  />
+    <Hotkey Name="Select_all_Donjons"             id="13" langIdText="16797" langHotKey="16783"  />
+    <Hotkey Name="Select_all_Military_Buildings"  id="14" langIdText="16798" langHotKey="16800"  />
+    <Hotkey Name="Select_all_idle_Trade_carts"    id="15" langIdText="16813" langHotKey="16814"  />
+  </Hotkey_Groups>
+  <Hotkey_Groups id="18" Name="LumberCamp" langIdText="16708"   count="1"  >
+    <Hotkey Name="WoodUpgrade"       id="0" langIdText="16687" langHotKey="16688"  />
+  </Hotkey_Groups>
+  <Hotkey_Groups id="19" Name="MiningCamp" langIdText="16709"   count="2"  >
+    <Hotkey Name="GoldUpgrade"       id="0" langIdText="16692" langHotKey="16693"  />
+    <Hotkey Name="StoneUpgrade"      id="1" langIdText="16694" langHotKey="16695"  />
+  </Hotkey_Groups>
+</configuration>
