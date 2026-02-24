@@ -27,3 +27,5 @@ https://github.com/genie-js/genie-hki
   adapte to php .
   -Use js and html to do a key board to that allow user to edit VK key hex code.
   -Re compress the date gzdeflate
+
+Last thnig to test is keyboard compatibilit special caractere : * / ( )   ...etc
