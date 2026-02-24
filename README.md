@@ -30,3 +30,8 @@ Adapte to php.
 - Re compress the date gzdeflate
 
 Last thing to test is keyboard compatibility special caractere : * / ( )   ... etc
+
+
+The website can be accessed via this link:
+https://aoe2recanalyst.byethost16.com/hotkeyEditor
+
