@@ -28,4 +28,4 @@ https://github.com/genie-js/genie-hki
   -Use js and html to do a key board to that allow user to edit VK key hex code.
   -Re compress the date gzdeflate
 
-Last thnig to test is keyboard compatibilit special caractere : * / ( )   ...etc
+Last thing to test is keyboard compatibility special caractere : * / ( )   ... etc
