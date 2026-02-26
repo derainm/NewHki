@@ -33,5 +33,5 @@ Last thing to test is keyboard compatibility special caractere : * / ( )   ... e
 
 
 The website can be accessed via this link:
-https://aoe2recanalyst.byethost16.com/hotkeyEditor
+https://aoe2recanalyst.ovh/hotkeyEditor
 
